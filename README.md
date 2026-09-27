@@ -70,16 +70,6 @@ This generates 1,000 synthetic samples, trains the model, and then prompts you f
 
 ---
 
-## API Reference
-
-### `ExpenditurePredictor(geo_data_path: str = "world_cities_currencies.csv")`
-
-Creates a new predictor and loads the city/currency reference data.
-
-- If `geo_data_path` exists (absolute, or relative to the current working directory, or relative to `predictex.py`'s own directory), it's loaded as a CSV.
-- If the default path doesn't exist, a small **built-in table** is used instead (New York, Austin, San Francisco, Chicago, Miami, and Accra).
-- If a **custom** path is given and doesn't exist, a `FileNotFoundError` is raised.
-- The CSV (or DataFrame) must contain the columns: `city`, `currency_code`, `currency_symbol`, `country`. Missing columns raise a `ValueError`.
 
 ### `get_city_currency(city: str) -> dict`
 
