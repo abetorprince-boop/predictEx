@@ -1,6 +1,6 @@
 # PredictEx
 
-**PredictEx** is a small Python library for predicting local household monthly expenditure based on occupation, city, and number of children — and automatically formatting the result in the correct local currency for that city.
+**PredictEx** is a small Python library for predicting local household monthly expenditure based on occupation, city, and number of children and automatically formatting the result in the correct local currency for that city.
 
 It wraps a scikit-learn `RandomForestRegressor` inside a preprocessing pipeline (one-hot encoding for categorical fields) and pairs it with a city → currency lookup table, so predictions come back as a ready-to-display string like `GH₵2,150.00 GHS (Ghana)` instead of a raw number.
 
